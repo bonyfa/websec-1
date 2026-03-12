@@ -16,6 +16,7 @@ body {
 
 .calculator {
     background-color: rgba(144, 238, 144, 0.3);
+    border-radius: 10px;
     padding: 25px;
     width: 100%;
     max-width: 500px;
@@ -47,19 +48,11 @@ body {
     min-width: 0;
     color: red;
     background-color: transparent;
-    transition: all 0.3s ease;
 }
 
 .calculator__calc-inp.error {
     border: 3px solid red;
     background-color: rgba(255, 0, 0, 0.1);
-    animation: shake 0.3s ease;
-}
-
-@keyframes shake {
-    0%, 100% { transform: translateX(0); }
-    25% { transform: translateX(-5px); }
-    75% { transform: translateX(5px); }
 }
 
 .calculator__calc-inp::placeholder {
@@ -101,16 +94,6 @@ select option {
     color: red;
     width: auto;
     min-width: 180px;
-    transition: all 0.2s ease;
-}
-
-.calculator__button:hover {
-    background-color: rgba(255, 0, 0, 0.05);
-    transform: scale(1.02);
-}
-
-.calculator__button:active {
-    transform: scale(0.98);
 }
 
 #output {
@@ -152,51 +135,4 @@ select option {
     margin-top: 10px;
     font-weight: bold;
     text-align: center;
-}
-
-
-@media screen and (max-width: 480px) {
-    .calculator {
-        padding: 15px;
-    }
-
-    #input {
-        gap: 10px;
-    }
-
-    .calculator__calc-inp {
-        flex: 1 1 100%;
-        padding: 10px;
-        font-size: 16px;
-    }
-
-    select {
-        flex: 1 1 100%;
-        width: 100%;
-    }
-
-    .calculator__button {
-        min-width: 150px;
-        padding: 8px 20px;
-        font-size: 18px;
-    }
-
-    .calculator__calc-outp {
-        font-size: 16px;
-    }
-
-    .result-item.prev {
-        font-size: 14px;
-    }
-}
-
-@media screen and (max-width: 320px) {
-    .calculator {
-        padding: 10px;
-    }
-
-    .calculator__button {
-        min-width: 130px;
-        font-size: 16px;
-    }
 }

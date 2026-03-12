@@ -175,13 +175,4 @@ document.addEventListener('DOMContentLoaded', function() {
         const errorMsg = document.querySelector('.error-message');
         if (errorMsg) errorMsg.remove();
     });
-    
-    // Добавляем пример при загрузке
-    firstInput.value = '123';
-    secondInput.value = '567';
-    
-    // Инициализация с примером
-    setTimeout(() => {
-        calculate();
-    }, 100);
 });
