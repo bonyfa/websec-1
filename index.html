@@ -1,23 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="calculator" id="calc">
-        <div class="calculator__calc">
-            <input type="text" class="calculator__calc-inp">
-            <select>
-                
+        <div class="calculator__buttons" id="input">
+            <input type="text" class="calculator__calc-inp" id="firstNumber" placeholder="123">
+            <select id="operator">
+                <option value="+">(+)</option>
+                <option value="-">(-)</option>
+                <option value="*">(*)</option>
+                <option value="/">(/)</option>
+                <option value="%">(%)</option>
+                <option value="^">(^)</option>
             </select>
-            <input type="text" class="calculator__calc-inp">
+            <input type="text" class="calculator__calc-inp" id="secondNumber" placeholder="567">
         </div>
-        <button class="calculator__button"></button>
-        <output type="text" class="calculator__calc-outp">
-        <div class="calculator__input"></div>
+        <div class="calculator__buttons" id="button">
+            <button class="calculator__button" id="calculateBtn">подсчитать</button>
+        </div>
+        <div class="calculator__button" id="output">
+            <div class="calculator__calc-outp" id="result"></div>
+        </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
