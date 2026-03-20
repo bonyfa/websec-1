@@ -14,6 +14,14 @@ body {
     padding: 15px;
 }
 
+.calculator__frame {
+    border: 2px dashed red;
+    border-radius: 15px;
+    font-size: 18px;
+    background-color: transparent;
+    color: red;
+}
+
 .calculator {
     background-color: rgba(144, 238, 144, 0.3);
     border-radius: 10px;
@@ -30,24 +38,14 @@ body {
     gap: 15px;
     width: 100%;
     flex-wrap: wrap;
-}
-
-#input {
-    display: flex;
-    flex-wrap: wrap;
     justify-content: center;
 }
 
 .calculator__calc-inp {
     flex: 1 1 120px;
     padding: 12px 15px;
-    border: 2px dashed red;
-    border-radius: 15px;
-    font-size: 18px;
     text-align: center;
     min-width: 0;
-    color: red;
-    background-color: transparent;
 }
 
 .calculator__calc-inp.error {
@@ -59,26 +57,16 @@ body {
     color: rgba(255, 0, 0, 0.3);
 }
 
-select {
+select.calculator__frame {
     flex: 0 0 80px;
     padding: 12px;
-    border: 2px dashed red;
-    border-radius: 15px;
-    font-size: 18px;
-    background-color: transparent;
-    text-align: center;
-    color: red;
     cursor: pointer;
+    text-align: center;
 }
 
 select option {
     color: red;
-    background-color: rgba(144, 238, 144, 0.3);
-}
-
-#button {
-    display: flex;
-    justify-content: center;
+    background-color: #e8fce8;
 }
 
 .calculator__button {
@@ -96,43 +84,23 @@ select option {
     min-width: 180px;
 }
 
-#output {
+#output.calculator__frame {
     width: 100%;
-    border: 2px dashed red;
-    border-radius: 15px;
     padding: 15px;
-    background-color: transparent;
     min-height: 120px;
 }
 
 .calculator__calc-outp {
-    font-size: 18px;
     text-align: center;
     font-family: monospace;
     line-height: 1.6;
     white-space: pre-wrap;
     word-break: break-word;
-    color: red;
     display: flex;
     flex-direction: column;
     gap: 8px;
 }
 
-.result-item {
-    color: red;
-    font-weight: bold;
-}
-
-.result-item.prev {
-    opacity: 0.4;
-    font-size: 16px;
-    font-weight: normal;
-}
-
-.error-message {
-    color: red;
-    font-size: 16px;
-    margin-top: 10px;
-    font-weight: bold;
-    text-align: center;
-}
+.result-item { font-weight: bold; }
+.result-item.prev { opacity: 0.4; font-size: 16px; font-weight: normal; }
+.error-message { color: red; font-size: 16px; margin-top: 10px; font-weight: bold; text-align: center; }

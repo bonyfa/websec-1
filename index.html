@@ -9,19 +9,19 @@
 <body>
     <div class="calculator" id="calc">
         <div class="calculator__buttons" id="input">
-            <input type="text" class="calculator__calc-inp" id="firstNumber" >
-            <select id="operator">
+            <input type="text" class="calculator__calc-inp calculator__frame" id="firstNumber" placeholder="Число 1">
+            <select id="operator" class="calculator__frame">
                 <option value="+">(+)</option>
                 <option value="-">(-)</option>
                 <option value="*">(*)</option>
                 <option value="/">(/)</option>
             </select>
-            <input type="text" class="calculator__calc-inp" id="secondNumber">
+            <input type="text" class="calculator__calc-inp calculator__frame" id="secondNumber" placeholder="Число 2">
         </div>
         <div class="calculator__buttons" id="button">
             <button class="calculator__button" id="calculateBtn">подсчитать</button>
         </div>
-        <div class="calculator__button" id="output">
+        <div class="calculator__frame" id="output">
             <div class="calculator__calc-outp" id="result"></div>
         </div>
     </div>
